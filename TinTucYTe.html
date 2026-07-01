@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Tin tức y tế mới nhất: dịch bệnh, vắc-xin, nghiên cứu y học, tim mạch, nhi khoa và nhiều chuyên mục khác." />
+        <title>Tin tức y tế - Đời sống sức khoẻ</title>
+        <link rel="stylesheet" href="CSS/main.css" />
+        <script src="JavaScript/home.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- =============================================
+            HEADER
+        ============================================= -->
+        <header class="site-header">
+        <!-- Main navbar -->
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="navbar__inner">
+                    <!-- Brand -->
+                    <a href="Trangchu.html" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                    </a>
+
+                    <!-- Nav links -->
+                    <div class="navbar__nav">
+                    <a href="Trangchu.html">Trang chủ</a>
+                    <a href="TinTucYTe.html" class="active">Tin tức y tế</a>
+                    <a href="TinhTrangSucKhoe.html">Tình trạng sức khoẻ</a>
+                    <a href="LoiSongKhoe.html">Lối sống khoẻ</a>
+                    <a href="SoCuu.html">Sơ cứu</a>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                        <img class="search_img" src="assets/search.png" alt="tìm kiếm"/>
+                        </button>
+                    </div>
+                    <div class="navbar__actions">
+                        <a href="DangNhap.html" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                        </a>
+                        <div class="navbar__user" id="userMenu" style="display:none;">
+                        <button class="navbar__user-btn" id="userMenuToggle">
+                            <span class="navbar__avatar" id="userAvatar"></span>
+                            <span class="navbar__user-name" id="userName"></span>
+                            <img class="user_symbol" src="assets/arrow.png" alt="mũi tên"/>
+                        </button>
+                        <div class="navbar__user-menu">
+                            <a href="Profile.html">Tài khoản của tôi</a>
+                            <button class="logout" id="logoutBtn">Đăng xuất</button>
+                        </div>
+                        </div>
+                        <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- =============================================
+                PAGE BANNER
+         ============================================= -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-banner__title">Tin tức y tế</h1>
+                <p class="page-banner__desc">
+                    Cập nhật nhanh, chính xác về dịch bệnh, vắc-xin, nghiên cứu y học và các chuyên khoa — được tổng hợp và kiểm duyệt bởi đội ngũ chuyên gia y tế.
+                </p>
+                <div class="page-banner__stats">
+                    <div class="page-banner__stat">
+                        <img class="check" src="assets/check.png" alt="check"/>
+                        <span><b>100%</b> bài viết kiểm duyệt y khoa</span>
+                    </div>
+                    <div class="page-banner__stat">
+                        <img class="check" src="assets/time.png" alt="thời gian"/>
+                        <span>Cập nhật <b>hàng ngày</b></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+                CATEGORY FILTER
+        ============================================= -->
+        <nav class="category-filter" aria-label="Lọc theo chuyên mục">
+            <div class="category-filter__inner" id="categoryFilter">
+                <button class="category-pill is-active" data-category="all">Tất cả</button>
+                <button class="category-pill" data-category="dich-benh">Dịch bệnh</button>
+                <button class="category-pill" data-category="vac-xin">Vắc-xin</button>
+                <button class="category-pill" data-category="tim-mach">Tim mạch</button>
+                <button class="category-pill" data-category="nhi-khoa">Nhi khoa</button>
+                <button class="category-pill" data-category="ung-thu">Ung thư</button>
+                <button class="category-pill" data-category="nghien-cuu">Nghiên cứu y học</button>
+            </div>
+        </nav>
+        <!-- =============================================
+                FEATURED SPLIT
+        ============================================= -->
+        <section class="featured-split">
+            <div class="container">
+                <div class="featured-split__grid">
+
+                    <!-- Featured big article -->
+                    <a href="Article/chiendichphongchongsotxuuuathuyet.html" class="featured-main">
+                        <img
+                            src="Image/phongchongsotuathuyet.png"
+                            alt="Phòng chống sốt xuất huyết tại TP.HCM"
+                            class="featured-main__img"
+                        />
+                        <div class="featured-main__content">
+                            <span class="featured-main__badge">Dịch bệnh</span>
+                            <h2 class="featured-main__title">TP.HCM khởi động chiến dịch phòng chống sốt xuất huyết trước mùa mưa 2024</h2>
+                            <p class="featured-main__excerpt">
+                                Sở Y tế TP.HCM triển khai chiến dịch diệt muỗi và tuyên truyền phòng bệnh tại 22 quận huyện, dự kiến tiếp cận hơn 500.000 hộ gia đình trong tháng tới nhằm kéo giảm số ca mắc trước mùa mưa.
+                            </p>
+                            <div class="featured-main__meta">
+                                <span>1 giờ trước</span>
+                                <span class="verified-badge">
+                                <img class="check" src="assets/check.png" alt="check"/>
+                                Đã kiểm duyệt y khoa
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Secondary articles -->
+                    <div class="featured-secondary">
+                        <a href="Article/lieuphapgendieutrithoaihoathankinh.html" class="secondary-card" data-category="nghien-cuu">
+                            <div class="secondary-card__img-wrap">
+                                <img src="Image/lieuphapdieutrijthoaihoathankinh.png" alt="Liệu pháp gen điều trị thần kinh" class="secondary-card__img" />
+                            </div>
+                            <div>
+                                <span class="secondary-card__tag">Nghiên cứu y học</span>
+                                <h3 class="secondary-card__title">Liệu pháp gen mới mở ra hướng điều trị bệnh thoái hoá thần kinh</h3>
+                                <div class="secondary-card__meta">
+                                <span>3 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Article/suydinhduongthapcoiotreem.html" class="secondary-card" data-category="nhi-khoa">
+                            <div class="secondary-card__img-wrap">
+                                <img src="Image/suydinhduongthapcoi.png" alt="Dinh dưỡng trẻ em" class="secondary-card__img" />
+                            </div>
+                            <div>
+                                <span class="secondary-card__tag">Nhi khoa</span>
+                                <h3 class="secondary-card__title">Suy dinh dưỡng thể thấp còi ở trẻ em: Thực trạng và giải pháp can thiệp sớm</h3>
+                                <div class="secondary-card__meta">
+                                <span>5 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================
+                NEWS GRID + SIDEBAR
+        ============================================= -->
+        <section class="news-layout">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2 class="section-title">Tất cả bài viết</h2>
+                </div>
+
+                <div class="news-layout__grid">
+                    <!-- News grid -->
+                    <div class="news-grid" id="newsGrid">
+                        <a href="Article/Tin-tuc-1.html" class="news-card">
+                            <div class="news-card__img-wrap">
+                                <img
+                                    src="Image/thieuhutchatdinhduong.png"
+                                    alt="thieuhutchatdinhduong"
+                                    class="news-card__img"
+                                />
+                            </div>
+                            <div class="news-card__body">
+                                <h3 class="news-card__title">Thực trạng thiếu hụt hoặc mất cân bằng đạm trong bữa ăn hằng ngày của người Việt đang ở mức đáng báo động</h3>
+                                <div class="news-card__meta">
+                                    <span>4 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Article/Tin-tuc-2.html" class="news-card">
+                            <div class="news-card__img-wrap">
+                                <img
+                                    src="Image/xuhuongluachondam.png"
+                                    alt="xuhuongluachondam"
+                                    class="news-card__img"
+                                />
+                            </div>
+                            <div class="news-card__body">
+                                <h3 class="news-card__title">Xu hướng lựa chọn đạm thực vật trong thực đơn lành mạnh tại Việt Nam</h3>
+                                <div class="news-card__meta">
+                                    <span>6 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Article/Tin-tuc-3.html" class="news-card">
+                            <div class="news-card__img-wrap">
+                                <img
+                                    src="Image/loikhuyentieuduong.png"
+                                    alt="loikhuyentieuduong"
+                                    class="news-card__img"
+                                />
+                            </div>
+                            <div class="news-card__body">
+                                <h3 class="news-card__title">Lời khuyên dinh dưỡng từ bác sĩ dành cho bệnh nhân tiểu đường</h3>
+                                <div class="news-card__meta">
+                                    <span>8 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Article/Tin-tuc-4.html" class="news-card">
+                            <div class="news-card__img-wrap">
+                                <img
+                                    src="Image/tangcuongkynangsocuu.png"
+                                    alt="tangcuongkynangsocuu"
+                                    class="news-card__img"
+                                />
+                            </div>
+                            <div class="news-card__body">
+                                <h3 class="news-card__title">Tăng cường hướng dẫn kỹ năng sơ cứu ban đầu trong cộng đồng</h3>
+                                <div class="news-card__meta">
+                                    <span>8 giờ trước</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <div class="sidebar__panel">
+                            <h3 class="sidebar__title">Chuyên mục</h3>
+                            <div class="tag-cloud">
+                                <a href="#">Dịch bệnh</a>
+                                <a href="#">Vắc-xin</a>
+                                <a href="#">Tim mạch</a>
+                                <a href="#">Nhi khoa</a>
+                                <a href="#">Ung thư</a>
+                                <a href="#">Tâm thần</a>
+                                <a href="#">Nghiên cứu y học</a>
+                            </div>
+                        </div>
+                    </a
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =============================================
+            FOOTER (giữ nguyên từ Trangchu.html)
+        ============================================= -->
+        <footer class="footer">
+            <div class="footer__inner">
+                <!-- Brand column -->
+                <div class="footer__brand">
+                <a href="Trangchu.html" class="footer__brand-logo" aria-label="Trang chủ">
+                    <img src="assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                    <span class="footer__brand-name">Đời sống sức khoẻ</span>
+                </a>
+                <p class="footer__brand-desc">
+                    Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+                </p>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img class="footer__social-link-image" src="assets/facebook.png" alt="Facebook"/>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img class="footer__social-link-image" src="assets/youtube.png" alt="Youtube"/>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img class="footer__social-link-image" src="assets/instagram.png" alt="Instagram"/>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Gmail">
+                    <img class="footer__social-link-image" src="assets/gmail.png" alt="Gmail"/>
+                    </a>
+                </div>
+                </div>
+
+                <!-- Chuyên mục -->
+                <div class="footer__col">
+                <h3 class="footer__col-title">Chuyên mục chính</h3>
+                <nav class="footer__links" aria-label="Chuyên mục">
+                    <a href="TinTucYTe/TinTucYTe.html">Tin tức y tế</a>
+                    <a href="TinhTrangSucKhoe/TinhTrangSucKhoe.html">Tình trạng sức khoẻ</a>
+                    <a href="LoiSongKhoe/LoiSongKhoe.html">Lối sống khoẻ</a>
+                    <a href="SoCuu/SoCuu.html">Hướng dẫn sơ cứu</a>
+                </nav>
+                </div>
+
+                <!-- Hỗ trợ -->
+                <div class="footer__col">
+                <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+                <nav class="footer__links" aria-label="Hỗ trợ">
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Liên hệ</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật và điều khoản</a>
+                </nav>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer__col">
+                <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+                <p class="footer__newsletter-text">
+                    Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+                </p>
+                <div class="footer__newsletter-form">
+                    <input
+                    type="email"
+                    class="footer__newsletter-input"
+                    placeholder="Email của bạn"
+                    aria-label="Email đăng ký nhận tin"
+                    />
+                    <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                    <img class="send" src="assets/white-arrow.png" alt="gửi"/>
+                    </button>
+                </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer__bottom">
+                <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+            </div>
+        </footer>
+    </body>
+</html>

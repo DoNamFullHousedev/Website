@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đời sống sức khoẻ - Tin tức sức khoẻ và đời sống lành mạnh hàng ngày" />
+    <title>Đời sống sức khoẻ - Tin tức sức khoẻ mới nhất</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JavaScript/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- =============================================
+            HEADER: TOPBAR + NAVBAR
+        ============================================= -->
+    <header class="site-header">
+        <!-- Main navbar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="navbar__inner">
+                <!-- Brand -->
+                <a href="../Trangchu.html" class="navbar__brand" aria-label="Trang chủ">
+                    <img src="../assets/logo.png" alt="HealthyCare News" class="navbar__logo" />
+                    <div class="navbar__brand-text">
+                        <span class="navbar__brand-name">Đời sống sức khoẻ</span>
+                        <span class="navbar__brand-tagline">Tin tức sức khoẻ hàng ngày</span>
+                    </div>
+                </a>
+
+                <!-- Nav links -->
+                <div class="navbar__nav">
+                    <a href="../Trangchu.html">Trang chủ</a>
+                    <a href="../TinTucYTe.html">Tin tức y tế</a>
+                    <a href="../TinhTrangSucKhoe.html" class="active">Tình trạng sức khoẻ</a>
+                    <a href="../LoiSongKhoe.html">Lối sống khoẻ</a>
+                    <a href="../SoCuu.html">Sơ cứu</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="navbar__search" id="searchBox">
+                    <input class="search_input" id="searchInput" type="search" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button class="navbar__search-btn" id="searchToggleBtn" aria-label="Tìm kiếm">
+                    <img class="search_img" src="../assets/search.png" alt="tìm kiếm"/>
+                    </button>
+                </div>
+                <div class="navbar__actions">
+                    <a href="../DangNhap.html" class="navbar__login-btn" id="loginBtn">
+                        <img class="user_img" src="../assets/user.png" alt="người dùng"/>
+                        Đăng nhập
+                    </a>
+                    <div class="navbar__user" id="userMenu" style="display:none;">
+                    <button class="navbar__user-btn" id="userMenuToggle">
+                        <span class="navbar__avatar" id="userAvatar"></span>
+                        <span class="navbar__user-name" id="userName"></span>
+                        <img class="user_symbol" src="../assets/arrow.png" alt="mũi tên"/>
+                    </button>
+                    <div class="navbar__user-menu">
+                        <a href="../Profile.html">Tài khoản của tôi</a>
+                        <button class="logout" id="logoutBtn">Đăng xuất</button>
+                    </div>
+                    </div>
+                    <button class="navbar__hamburger " aria-label="Menu ">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =====================================================
+        PAGE HEADER — Bệnh lý hô hấp
+        ===================================================== -->
+    <header class="disease-page-header ">
+        <div class="disease-page-header-bg " aria-hidden="true "></div>
+        <div class="site-wrapper ">
+            <div class="disease-page-header-inner ">
+                <div class="disease-page-header-text ">
+                    <h1 class="disease-page-title ">Bệnh lý hô hấp</h1>
+                    <p class="disease-page-desc ">
+                        Khám phá kiến thức chi tiết về các bệnh lý hô hấp thường gặp. Cung cấp đủ nguyên nhân, triệu chứng và các phương pháp phòng ngừa hiệu quả từ đội ngũ chuyên gia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =====================================================
+            DANH SÁCH BÀI VIẾT BỆNH LÝ HÔ HẤP
+        ===================================================== -->
+    <main class="disease-article-section ">
+        <div class="site-wrapper ">
+            <div class="disease-article-list ">
+                <!-- Bài 1 -->
+                <article class="disease-article-card ">
+                    <div class="disease-article-thumb ">
+                        <img src="../Image/suckhoecuaphoi.png" alt="Ảnh hưởng của lối sống đến hệ hô hấp " />
+                    </div>
+                    <div class="disease-article-body ">
+                        <span class="disease-article-tag ">Mãn tính</span>
+                        <h3 class="disease-article-title ">Ảnh hưởng của lối sống đến sức khỏe hô hấp</h3>
+                        <p class="disease-article-excerpt ">
+                            Chế độ ăn uống, tập luyện, thói quen hút thuốc và môi trường sống có tác động trực tiếp đến hệ hô hấp, giúp phòng ngừa hen suyễn, COPD và các bệnh phổi mạn tính.
+                        </p>
+                    </div>
+                    <a href="../Article/Anh-huong-cua-loi-song-toi-suc-khoe-ho-hap.html" class="disease-article-cta ">
+                        Chi tiết
+                        <svg width="14 " height="14 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2.5 ">
+                            <path d="M5 12h14M12 5l7 7-7 7 "/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Bài 2 -->
+                <article class="disease-article-card ">
+                    <div class="disease-article-thumb is-icon-thumb ">
+                        <img src="../Image/hensuyen.png" alt="Hình ảnh minh họa hen suyễn ">
+                    </div>
+                    <div class="disease-article-body ">
+                        <span class="disease-article-tag ">Mạn tính</span>
+                        <h3 class="disease-article-title ">Hen suyễn (Asthma)</h3>
+                        <p class="disease-article-excerpt ">
+                            Bệnh viêm mạn tính đường hô hấp gây co thắt phế quản, khó thở, khò khè, thường khởi phát do dị nguyên, thời tiết hoặc vận động.
+                        </p>
+                    </div>
+                    <a href="../Article/Hen-suyen.html" class="disease-article-cta ">
+                        Chi tiết
+                        <svg width="14 " height="14 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2.5 ">
+                            <path d="M5 12h14M12 5l7 7-7 7 "/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Bài 3 -->
+                <article class="disease-article-card ">
+                    <div class="disease-article-thumb is-icon-thumb ">
+                        <img src="../Image/COPD.png" alt="Hình ảnh minh họa COPD ">
+                    </div>
+                    <div class="disease-article-body ">
+                        <span class="disease-article-tag ">Mạn tính</span>
+                        <h3 class="disease-article-title ">COPD - Bệnh phổi tắc nghẽn mạn tính</h3>
+                        <p class="disease-article-excerpt ">
+                            Bệnh lý mạn tính gây hẹp và tắc nghẽn đường thở, thường gặp ở người hút thuốc lá lâu năm, dẫn đến khó thở kéo dài và suy giảm chức năng phổi.
+                        </p>
+                    </div>
+                    <a href="../Article/COPD.html" class="disease-article-cta ">
+                        Chi tiết
+                        <svg width="14 " height="14 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2.5 ">
+                            <path d="M5 12h14M12 5l7 7-7 7 "/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Bài 4 -->
+                <article class="disease-article-card ">
+                    <div class="disease-article-thumb ">
+                        <img src="../Image/viemphequan.png" alt="Hình ảnh minh hoạ viêm phế quản " />
+                    </div>
+                    <div class="disease-article-body ">
+                        <span class="disease-article-tag ">Cấp tính</span>
+                        <h3 class="disease-article-title ">Viêm phế quản cấp</h3>
+                        <p class="disease-article-excerpt ">
+                            Viêm nhiễm niêm mạc phế quản gây ho nhiều, khạc đờm, sốt và khó thở. Thường do virus hoặc vi khuẩn sau cảm cúm.
+                        </p>
+                    </div>
+                    <a href="../Article/Viem-phe-quan.html" class="disease-article-cta ">
+                        Chi tiết
+                        <svg width="14 " height="14 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2.5 ">
+                            <path d="M5 12h14M12 5l7 7-7 7 "/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Bài 5 -->
+                <article class="disease-article-card ">
+                    <div class="disease-article-thumb ">
+                        <img src="../Image/viemxoang.png" alt="Hình ảnh minh hoạ viêm xoang " />
+                    </div>
+                    <div class="disease-article-body ">
+                        <span class="disease-article-tag ">Cấp tính</span>
+                        <h3 class="disease-article-title ">Viêm xoang</h3>
+                        <p class="disease-article-excerpt ">
+                            Viêm nhiễm niêm mạc xoang mũi gây tắc nghẽn, đau nhức mặt, chảy dịch mũi và nhức đầu. Thường kèm theo viêm mũi.
+                        </p>
+                    </div>
+                    <a href="../Article/Viem-xoang.html" class="disease-article-cta ">
+                        Chi tiết
+                        <svg width="14 " height="14 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2.5 ">
+                            <path d="M5 12h14M12 5l7 7-7 7 "/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- =============================================
+            FOOTER
+        ============================================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- Brand column -->
+            <div class="footer__brand">
+            <a href="../Trangchu.html" class="footer__brand-logo" aria-label="Trang chủ">
+                <img src="../assets/logo.png" alt="HealthyCare News" class="footer__logo" />
+                <span class="footer__brand-name">Đời sống sức khoẻ</span>
+            </a>
+            <p class="footer__brand-desc">
+                Đời sống sức khoẻ là trang thông tin sức khoẻ và đời sống, cung cấp tin tức chính xác, bài viết chuyên sâu về sức khoẻ, học thuật và cẩm nang sống khoẻ hàng ngày.
+            </p>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <img class="footer__social-link-image" src="../assets/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <img class="footer__social-link-image" src="../assets/youtube.png" alt="Youtube"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <img class="footer__social-link-image" src="../assets/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Gmail">
+                <img class="footer__social-link-image" src="../assets/gmail.png" alt="Gmail"/>
+                </a>
+            </div>
+            </div>
+
+            <!-- Chuyên mục -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Chuyên mục chính</h3>
+            <nav class="footer__links" aria-label="Chuyên mục">
+                <a href="../TinTucYTe.html">Tin tức y tế</a>
+                <a href="../TinhTrangSucKhoe.html">Tình trạng sức khoẻ</a>
+                <a href="..//LoiSongKhoe.html">Lối sống khoẻ</a>
+                <a href="..//SoCuu.html">Hướng dẫn sơ cứu</a>
+            </nav>
+            </div>
+
+            <!-- Hỗ trợ -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Thông tin hỗ trợ</h3>
+            <nav class="footer__links" aria-label="Hỗ trợ">
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật và điều khoản</a>
+            </nav>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer__col">
+            <h3 class="footer__col-title">Đăng ký nhận tin</h3>
+            <p class="footer__newsletter-text">
+                Nhận bản tin y tế hàng tuần, cập nhật xu hướng sức khoẻ mới nhất.
+            </p>
+            <div class="footer__newsletter-form">
+                <input
+                type="email"
+                class="footer__newsletter-input"
+                placeholder="Email của bạn"
+                aria-label="Email đăng ký nhận tin"
+                />
+                <button class="footer__newsletter-btn" aria-label="Đăng ký">
+                <img class="send" src="../assets/white-arrow.png" alt="gửi"/>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <p>© 2024 Đời sống sức khoẻ. Tất cả bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

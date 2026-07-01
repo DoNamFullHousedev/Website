@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảng điều khiển · Quản trị viên</title>
+  <meta name="description" content="Tổng quan hệ thống - chỉ số hiệu suất và mức độ tương tác người dùng theo thời gian thực." />
+  <link rel="stylesheet" href="CSS/admin.css" />
+  <script src="JavaScript/script.js" defer></script>
+  <script src="JavaScript/admin_dashboard.js" defer></script>
+  <script src="JavaScript/nav-link.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div>
+        <div class="brand">
+          <span class="brand-name">Quản trị viên</span>
+        </div>
+        <nav class="nav">
+          <a href="Admin_profile.html" class="nav-item"><i class="icon-user"></i><span>Profile</span></a>
+          <a href="Admin_dashboard.html" class="nav-item active"><i class="icon-layout-dashboard"></i><span>Bảng điều khiển</span></a>
+          <a href="Admin_user.html" class="nav-item"><i class="icon-users"></i><span>Quản lý người dùng</span></a>
+          <a href="Admin_comment.html" class="nav-item"><i class="icon-message-square"></i><span>Quản lý bình luận</span></a>
+          <a href="Admin_article.html" class="nav-item"><i class="icon-file-text"></i><span>Quản lý bài viết</span></a>
+          <a href="Admin_category.html" class="nav-item"><i class="icon-folder-tree"></i><span>Quản lý danh mục</span></a>
+        </nav>
+      </div>
+      <div class="nav nav-footer">
+        <button class="nav-item"><i class="icon-log-out"></i><span>Đăng xuất</span></button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <!-- ============ HEADER ============ -->
+      <header class="header">
+        <div class="site">
+          <div class="site-logo">
+            <img class="admin_icon_img" src="assets/logo.png" alt="logo"/>
+          </div>
+          <div>
+            <h3 class="site-title">Đời sống sức khoẻ</h3>
+            <p class="caption muted">Tin tức sức khoẻ hàng ngày</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div class="search">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Tìm kiếm dữ liệu..." />
+          </div>
+          <button class="icon-btn">
+            <i class="icon-bell"></i>
+            <span class="dot"></span>
+          </button>
+          <div class="avatar-sm"></div>
+        </div>
+      </header>
+
+      <!-- ============ CONTENT ============ -->
+      <main class="content dashboard">
+        <header class="page-head">
+          <h1>Tổng quan Hệ thống</h1>
+          <p class="muted">Các chỉ số hiệu suất và phân tích mức độ tương tác của người dùng theo thời gian thực.</p>
+        </header>
+
+        <!-- STATS -->
+        <section class="stats">
+          <article class="stat-card">
+            <p class="stat-label">Tổng người dùng đăng ký</p>
+            <p class="stat-value">24,592</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-label">Bài viết đã đăng tháng này</p>
+            <p class="stat-value">342</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-label">Tổng lượt xem bài viết</p>
+            <p class="stat-value">1.2M</p>
+          </article>
+
+          <article class="stat-card">
+            <p class="stat-label">Tổng lượt thích</p>
+            <p class="stat-value">89.4K</p>
+          </article>
+        </section>
+
+        <!-- CHART -->
+        <section class="card chart-card">
+          <header class="chart-head">
+            <div>
+              <h2>Tổng quan Lưu lượng</h2>
+              <p class="caption muted">Lượt khách truy cập duy nhất hàng ngày trong 30 ngày qua</p>
+            </div>
+            <div class="seg" role="tablist">
+              <button class="seg-btn active" data-range="week">Hàng tuần</button>
+              <button class="seg-btn" data-range="month">Hàng tháng</button>
+            </div>
+          </header>
+          <div class="dashboad__chart-wrap">
+            <svg id="trafficChart" viewBox="0 0 800 260" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="chart-axis">
+              <span>01 Th11</span><span>15 Th11</span><span>30 Th11</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- POST NOW -->
+        <section class="post-now">
+          <h2>Đăng bài ngay</h2>
+          <p class="post-sub">Mang những kiến thức y khoa của bạn đến với cộng đồng trong vài giây. Tiếng nói của bạn giúp cứu sống nhiều người.</p>
+          <button class="cta cta-light"><i class="icon-plus-circle"></i><span>Tạo bài viết mới</span></button>
+          <button class="cta cta-dark"><i class="icon-list"></i><span>Danh sách các bài viết</span></button>
+          <div class="post-footer">
+            <span class="caption">Đang chờ duyệt</span>
+            <span class="badge-count">14</span>
+          </div>
+        </section>
+
+        <button class="report-btn">Tạo báo cáo tổng quan</button>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
